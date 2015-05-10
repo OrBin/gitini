@@ -1,7 +1,3 @@
-MIT="3"
-ART="4"
-ISC="6"
-NOL="9"
 
 CHOICE1="1"
 CHOICE2="2"
@@ -21,35 +17,8 @@ echo "9.  No License\n"
 echo "10. The Unlicense\nEnter : "
 read license
 
-if [ "$license" == "$MIT" ]; then
-	echo "Enter Year : "
-	read yearmit
-	echo "Enter Full Name : "
-	read namemit
-	python src/add-license.py $yearmit $namemit $license $location
-elif [ "$license" == "$ART" ]; then
-	echo "Enter Year : "
-	read yearart
-	echo "Enter Full Name : "
-	read nameart
-	python src/add-license.py $yearart $nameart $license $location
-elif [ "$license" == "$ISC" ]; then
-	echo "Enter Year : "
-	read yearisc
-	echo "Enter Full Name : "
-	read nameisc
-	echo "Enter E-Mail : "
-	read mailisc
-	python src/add-license.py $yearisc $nameisc $mailisc $license $location
-elif [ "$license" == "$NOL" ]; then
-	echo "Enter Year : "
-	read yearnol
-	echo "Enter Full Name : "
-	read namenol
-	python src/add-license.py $yearnol $namenol $license $location
-else
-	python src/add-license.py $license $location
-fi
+python /usr/bin/src/add-license.py $license $location
+
 
 echo "LICENSE ADDED !\n"
 
@@ -62,9 +31,9 @@ read edit_choice
 
 if [ "$edit_choice" == "$CHOICE1" ]; then
 	vim .gitignore
-elif [ "$edit_choice" == "$CHOICE2" ]];then
+elif [ "$edit_choice" == "$CHOICE2" ]; then
 	vim README.md
-elif [ "$edit_choice" == "$CHOICE3" ]];then
+elif [ "$edit_choice" == "$CHOICE3" ]; then
 	vim CONTRIBUTE.md
 else
 	exit 0
