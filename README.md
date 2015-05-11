@@ -50,5 +50,5 @@ git add --all
 git remote add origin https://github.com/user/repo.git
 git push -u origin master
 ```
-Statements to be typed = 5 . Alongwith no License selection issue . Its a minor utility which achieves no great task just makes things a little simpler .
+Statements to be typed = 5 . Alongwith no License selection issue . Its a minor utility which achieves no great task but just makes things a little simpler (Built in 2 hours ! :p).
 

@@ -17,7 +17,7 @@ year = str(datetime.now().year)
 with open(pathf, 'r') as file:
     data = file.readlines()
 
-data[2] =  "[" + year + "]" + "  " + "[" + fullname + "]" + '\n'
+data[2] = year + "  " + fullname + '\n'
 
 with open(pathf, 'w') as file:
     file.writelines( data )

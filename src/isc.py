@@ -18,7 +18,7 @@ email = str(configfile.reademail())
 with open(pathf, 'r') as file:
     data = file.readlines()
 
-data[1] =  "[" + year + "]" + "  " + "[" + fullname + "]" + "  " + "<" + email + ">" + "\n"
+data[1] =  year + "  " + fullname  + "  " + email + "\n"
 
 with open(pathf, 'w') as file:
     file.writelines( data )
