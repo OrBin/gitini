@@ -1,3 +1,5 @@
+#! /bin/bash
+
 sudo -v 
 
 CHOICE1="1"
@@ -5,23 +7,36 @@ CHOICE2="2"
 CHOICE3="3"
 
 location=$(pwd)
-echo "SELECT LICENSE \n"
-echo "1.  Apache License 2.0\n"
-echo "2.  GNU General Public License v2.0\n"
-echo "3.  MIT License\n"
-echo "4.  Artistic License 2.0\n"
-echo "5.  Eclipse Public License 1.0\n"
-echo "6.  ISC License\n"
-echo "7.  GNU Lesser General Public License v2.1\n"
-echo "8.  Mozilla Public License 2.0\n"
-echo "9.  No License\n"
-echo "10. The Unlicense\nEnter : "
+echo "SELECT LICENSE "
+echo
+echo "1.  Apache License 2.0"
+echo
+echo "2.  GNU General Public License v2.0"
+echo
+echo "3.  MIT License"
+echo
+echo "4.  Artistic License 2.0"
+echo
+echo "5.  Eclipse Public License 1.0"
+echo
+echo "6.  ISC License"
+echo
+echo "7.  GNU Lesser General Public License v2.1"
+echo
+echo "8.  Mozilla Public License 2.0"
+echo
+echo "9.  No License"
+echo
+echo "10. The Unlicense"
+echo
+echo "Enter : "
 read license
 
-python /usr/bin/src/add-license.py $license $location
+sudo python /usr/bin/src/add-license.py $license $location
 
 
-echo "LICENSE ADDED !\n"
+echo "LICENSE ADDED !"
+echo
 
 touch .gitignore
 touch README.md

@@ -4,21 +4,21 @@ import sys
 import os
 import shutil
 import configfile
-import datetime from datetime
+from datetime import datetime
 
 location = str(sys.argv[1])
 pathf = location + "/LICENSE.txt"
 os.system("touch "+pathf)
 shutil.copyfile("/usr/bin/licenses/isc.txt",pathf)
 
-fullname = str(configfile.name)
+fullname = str(configfile.readname())
 year = str(datetime.now().year)
-email = str(configfile.email)
+email = str(configfile.reademail())
 
 with open(pathf, 'r') as file:
     data = file.readlines()
 
-data[1] =  "[ " + year + " ]" + "  " + "[ " + fullname + " ]" + "  " + "< " + email + " >" + '\n'
+data[1] =  "[" + year + "]" + "  " + "[" + fullname + "]" + "  " + "<" + email + ">" + "\n"
 
 with open(pathf, 'w') as file:
     file.writelines( data )
