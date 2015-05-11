@@ -1,5 +1,5 @@
 #gitini
-The missing git repository initializer . Utility for automatically adding license and creating other file such as `README.md` , `.gitignore` and `CONTRIBUTE.md` .
+The missing git repository initializer . Utility for automatically adding license and creating other files such as `README.md` , `.gitignore` and `CONTRIBUTE.md` .
 
 ##Installation
 ```
@@ -12,8 +12,8 @@ Enter EmailId : xyz@abc.com
 ```
 
 ##Usage
-The inspiration for this utility was the typical git initialization workflow .
-###Typical Initial Github Deployement :
+.
+###Typical Initial Github Deployment :
 ```
 git init
 touch README.md
@@ -28,6 +28,7 @@ After this you even have to select your preferred license and put it in your `LI
 `gitini` makes this little simple . Statements to be typed = 8
 
 ###With gitini :
+```
 git init
 gitini
 SELECT LICENSE 
@@ -49,5 +50,5 @@ git add --all
 git remote add origin https://github.com/user/repo.git
 git push -u origin master
 ```
-Statements to be typed = 5 . Alongwith no License selection issue .
+Statements to be typed = 5 . Alongwith no License selection issue . Its a minor utility which achieves no great task just makes things a little simpler .
 
