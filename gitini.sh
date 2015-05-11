@@ -1,3 +1,4 @@
+sudo -v 
 
 CHOICE1="1"
 CHOICE2="2"

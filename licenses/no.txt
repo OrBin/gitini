@@ -1,1 +1,2 @@
-Copyright [year] [fullname]
+Copyright 
+[year] [fullname]
