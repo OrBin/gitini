@@ -46,11 +46,11 @@ echo "Added (1).gitignore, (2)README.md and (3)CONTRIBUTE.md !. Press (1,2,3) to
 read edit_choice
 
 if [ "$edit_choice" == "$CHOICE1" ]; then
-	vim .gitignore
+	vim -c 'startinsert' .gitignore
 elif [ "$edit_choice" == "$CHOICE2" ]; then
-	vim README.md
+	vim -c 'startinsert' README.md
 elif [ "$edit_choice" == "$CHOICE3" ]; then
-	vim CONTRIBUTE.md
+	vim -c 'startinsert' CONTRIBUTE.md
 else
 	exit 0
 fi
