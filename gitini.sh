@@ -32,7 +32,7 @@ echo
 echo "Enter : "
 read license
 
-sudo python /usr/bin/src/add-license.py $license $location
+sudo python /usr/bin/gitini/add-license.py $license $location
 
 
 echo "LICENSE ADDED !"
