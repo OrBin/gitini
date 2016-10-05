@@ -9,8 +9,9 @@ setup(
   description = 'The missing Git repository initialization tool',
   author = 'Sarthak Munshi',
   author_email = 'sarthakmunshi@gmail.com',
+  license='MIT',
   url = 'https://github.com/saru95/gitini',
   download_url = 'https://github.com/saru95/gitini/tarball/0.1',
-  keywords = ['git', 'tool', 'repository'],
-  classifiers = [],
+  keywords = ['git', 'tool', 'repository', 'repo', 'init'],
+  classifiers = []
 )
